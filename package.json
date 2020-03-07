@@ -26,7 +26,11 @@
     "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0",
     "gulp-uglify": "^1.5.4",
+<<<<<<< HEAD
     "node-sass": "^4.13.1"
+=======
+    "node-sass": "^4.13.0"
+>>>>>>> e4dfb955cefebf5a434244705409dda0911ae903
   },
   "dependencies": {
     "check": "^1.0.0",

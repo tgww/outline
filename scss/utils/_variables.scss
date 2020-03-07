@@ -32,9 +32,6 @@ $btn-text-color-alt: $color-grey-dark;
 // Breakpoints
 $mobile-landscape: 30rem; // 480px
 $tablet: 40rem; // 640px
-$tablet-wide: 48rem; // 768px
-$desktop: 64rem; // 1024px
-$widescreen: 71.25rem; // 1140px
-
-
-
+$tablet-wide: 48rem; // 768px (45rem >720px)
+$desktop: 62rem; // 992px (64rem >1024px) (60rem >960px)
+$widescreen: 75rem; // 1200px (71.25rem >1140px)
