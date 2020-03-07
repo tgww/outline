@@ -47,13 +47,13 @@ gulp.task('sass', function () {
     .pipe(concat('all.css'))
     .pipe(sourcemaps.write('.'))
     // move css file to folder
-    .pipe(gulp.dest('./../css'))
+    .pipe(gulp.dest('../app/static/css'))
     // rename the file with .min
     .pipe(rename({
       suffix: '.min'
     }))
     // move minified css file to folder
-    .pipe(gulp.dest('./../css'))
+    .pipe(gulp.dest('../app/static/css'))
     // get file size (gzipped)
     .pipe(size({
       gzip: true
@@ -71,7 +71,7 @@ gulp.task('js', function() {
   // minify the file
   .pipe(uglify())
   // move js file to folder
-  .pipe(gulp.dest('js/min/'))
+  .pipe(gulp.dest('../app/static/js/min/'))
   // notify to say the task has complete
   .pipe(notify({
     message: 'JS task complete'
@@ -86,7 +86,7 @@ gulp.task('imagemin', function() {
     progressive: true,
     interlaced: true
   })))
-  .pipe(gulp.dest('./../img/'))
+  .pipe(gulp.dest('../app/static/img/'))
   // notify to say the task has complete
   .pipe(notify({
     message: 'Imagemin task complete'
